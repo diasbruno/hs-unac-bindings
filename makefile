@@ -14,3 +14,7 @@ build:
 
 test: build
 	cabal v2-test $(CABALFLAGS)
+
+publish:
+	cabal sdist
+	cabal upload --publish `find . -name "*unac-bindings*.tar*"`

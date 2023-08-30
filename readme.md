@@ -1,4 +1,7 @@
-# haskell bindings for unac(3)
+#  haskell bindings for unac(3) _[hackage](https://hackage.haskell.org/package/unac-bindings)_
+
+![tests](https://github.com/diasbruno/hs-unac-bindings/actions/workflows/haskell.yml/badge.svg)
+
 
 this package doesn't bind (yet) all functionalities
 of unac(3), but the most used one `unac_string`.

@@ -1,8 +1,11 @@
-cabal-version:      3.4
+cabal-version:      3.0
 name:               unac-bindings
 version:            0.1.0.0
 synopsis:           Bindings for libunac(3)
-description:        Bindings for libunac(3)
+description:        haskell bindings for unac(3)
+
+                    this package doesn't bind (yet) all functionalities
+                    of unac(3), but the most used one `unac_string`.
 license:            Unlicense
 license-file:       LICENSE
 author:             Bruno Dias
@@ -33,5 +36,5 @@ test-suite UnacBindingsTests
     main-is:          Main.hs
     build-depends:
         base ^>=4.16.4.0,
-        hspec,
+        hspec ==2.11.4,
         unac-bindings
